@@ -1,13 +1,21 @@
-import { useState } from 'react'
+import { useState } from "react";
+import { ColorModeContext, useMode } from "./theme";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [theme, colorMode] = useMode();
   return (
-    <div className="app">
-      Hello world
-    </div>
-  )
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <div className="app">
+          <div className="content">
+            Hello world
+          </div>
+        </div>
+      </ThemeProvider>
+    </ColorModeContext.Provider>
+  );
 }
 
-export default App
+export default App;
