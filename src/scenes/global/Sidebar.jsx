@@ -55,13 +55,13 @@ const Sidebar = () => {
 
   return (
     <Box
-      padding="5px 35px 5px 20px"
+      padding="5px"
       sx={{
         "& .ps-menu-button:hover": {
           color: "#868dfb !important",
         },
         "& .ps-menu-button.ps-active": {
-          backgroundColor: "#6870fa !important",
+          backgroundColor: "#2f369d !important",
           color: "#FFFF !important",
         },
       }}

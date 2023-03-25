@@ -1,5 +1,11 @@
 import { tokens } from "../theme";
 
+export const roles =  {
+  0: "admin",
+  1: "manager",
+  2: "user"
+}
+
 export const mockDataTeam = [
   {
     id: 1,
