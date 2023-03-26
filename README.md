@@ -2,7 +2,9 @@
 ```
 npm create vite@latest react_admin -- --template react
 npm install @mui/material @emotion/react @emotion/styled @mui/x-data-grid @mui/icons-material react-router-dom@6 react-pro-sidebar formik yup
-npm install @fullcalendar/core @fullcalendar/daygrid @fullcalendar/timegrid @fullcalendar/list
+npm install @fullcalendar/core @fullcalendar/daygrid @fullcalendar/timegrid @fullcalendar/list 
+npm install @fullcalendar/react @fullcalendar/interaction @fullcalendar/multimonth
+
 npm install @nivo/core @nivo/bar @nivo/pie @nivo/line @nivo/geo
 ```
 
@@ -16,17 +18,6 @@ npm install @nivo/core @nivo/bar @nivo/pie @nivo/line @nivo/geo
 - the create chart library
 
 
-
-// import Topbar from "./scenes/global/Topbar";
-// import Sidebar from "./scenes/global/Sidebar";
-// import Dashboard from "./scenes/dashboard";
-// import Team from "./scenes/team";
-// import Invoices from "./scenes/invoices";
-// import Contacts from "./scenes/contacts";
-// import Bar from "./scenes/chart/bar";
-// import Line from "./scenes/chart/line";
-// import Pie from "./scenes/chart/pie";
-
-// import Form from "./scenes/form";
-// import FAQ from "./scenes/faq";
-// import Geography from "./scenes/geography";
+#### List color
+#eeeee4 - yellow
+#cbdae5 - blue 

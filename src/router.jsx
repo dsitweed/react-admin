@@ -14,6 +14,7 @@ import Form from "./scenes/form";
 import FAQ from "./scenes/faq";
 import Geography from "./scenes/geography";
 import ErrorPage from "./ErrorPage";
+import Calendar from "./scenes/calendar";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,14 @@ const router = createBrowserRouter([
         element: <Form />,
       },
       {
+        path: "/faq",
+        element: <FAQ />,
+      },
+      {
+        path: "/calendar",
+        element: <Calendar />
+      },
+      {
         path: "/bar",
         element: <Bar />,
       },
@@ -52,10 +61,7 @@ const router = createBrowserRouter([
         path: "/line",
         element: <Line />,
       },
-      {
-        path: "/faq",
-        element: <FAQ />,
-      },
+      
       {
         path: "/geography",
         element: <Geography />,
