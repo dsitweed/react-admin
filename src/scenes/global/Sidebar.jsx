@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { ProSidebarProvider } from "react-pro-sidebar";
 import {
   Sidebar as ProSidebar,
   Menu,
   MenuItem,
-  SubMenu,
 } from "react-pro-sidebar";
 import profileImage from "../../assets/profile1.png";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import { Box, IconButton, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -27,7 +25,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
   const navigate = useNavigate();
   function handleClick() {
     setSelected(title);
-    navigate(to); 
+    navigate(to);
   }
 
   return (

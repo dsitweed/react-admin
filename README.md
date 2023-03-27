@@ -20,4 +20,6 @@ npm install @nivo/core @nivo/bar @nivo/pie @nivo/line @nivo/geo
 
 #### List color
 #eeeee4 - yellow
-#cbdae5 - blue 
+#cbdae5 - bright blue 
+#063970 - dark blue
+#f3f5f5 - white 

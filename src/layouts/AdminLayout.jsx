@@ -3,18 +3,23 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "../scenes/global/Sidebar";
 import Topbar from "../scenes/global/Topbar";
 import { ProSidebarProvider } from "react-pro-sidebar";
+import { Box } from "@mui/material";
 
 const AdminLayout = () => {
   return (
-    <div className="app">
+    <Box className="app" height="100vh">
       <ProSidebarProvider>
-        <Sidebar />
+        <Box height="100vh">
+          <Sidebar />
+        </Box>
       </ProSidebarProvider>
       <main className="content">
         <Topbar />
-        <Outlet />
+        <Box maxHeight="100%">
+          <Outlet />
+        </Box>
       </main>
-    </div>
+    </Box>
   );
 };
 

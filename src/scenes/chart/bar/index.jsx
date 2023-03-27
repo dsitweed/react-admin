@@ -1,9 +1,29 @@
+import { Box } from "@mui/material";
 import React from "react";
+import BarChart from "../../../components/BarChart";
+import Header from "../../../components/Header";
 
-const Team = () => {
-    return (
-        <h1>Team</h1>
-    );
-}
+import { mockBarData } from "../../../data/mockData";
 
-export default Team;
+const Bar = () => {
+  const data = {
+    data: mockBarData,
+    keys: ["hot dog", "burger", "sandwich", "kebab", "fries", "donut"],
+    indexBy: "country",
+    fillDot: ['fries'], // add dot to display
+    fillLine: ['sandwich'], // add line to display
+    legendX: 'Country',
+    legendY: 'Food'
+  };
+
+  return (
+    <Box m="20px">
+      <Header title="bar chart" subTitle="Simple Bar Chart" />
+      <Box height="75vh" mt="10px">
+        <BarChart data={data} />
+      </Box>
+    </Box>
+  );
+};
+
+export default Bar;
