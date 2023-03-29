@@ -1,6 +1,6 @@
 import { ResponsivePie } from "@nivo/pie";
 
-const PieChart = ({ data, isDashBoard = false }) => {
+const PieChart = ({ data, isDashboard = false }) => {
   // fill how to display
   let fill = [];
   data.fillDot?.map((item) => {
@@ -24,7 +24,7 @@ const PieChart = ({ data, isDashBoard = false }) => {
   return (
     <ResponsivePie
       data={data.data}
-      margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
+      margin={{ top: 40, right: 80, bottom: isDashboard ? 40 : 80, left: 80 }}
       sortByValue={true}
       innerRadius={0.5}
       padAngle={0.7}
@@ -65,7 +65,7 @@ const PieChart = ({ data, isDashBoard = false }) => {
         },
       ]}
       fill={fill}
-      legends={[
+      legends={isDashboard ? undefined : [
         {
           anchor: "bottom",
           direction: "row",
@@ -88,7 +88,7 @@ const PieChart = ({ data, isDashBoard = false }) => {
               },
             },
           ],
-        },
+        }
       ]}
     />
   );

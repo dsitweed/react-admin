@@ -7,17 +7,13 @@ import { Box } from "@mui/material";
 
 const AdminLayout = () => {
   return (
-    <Box className="app" height="100vh">
+    <Box className="app" height="100vh" flexDirection="row" display="flex">
       <ProSidebarProvider>
-        <Box height="100vh">
-          <Sidebar />
-        </Box>
+        <Sidebar />
       </ProSidebarProvider>
-      <main className="content">
+      <main className="content" style={{ overflow: "auto" }}>
         <Topbar />
-        <Box maxHeight="100%">
-          <Outlet />
-        </Box>
+        <Outlet />
       </main>
     </Box>
   );

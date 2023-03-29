@@ -84,11 +84,11 @@ const FAQ = () => {
             sx={{
               backgroundColor: "#f3f5f5",
             }}
+            key={index}
           >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               id={index}
-              key={index}
             >
               <Typography variant="h6" color="#063970" fontWeight={600}>{question.summary}</Typography>
             </AccordionSummary>
